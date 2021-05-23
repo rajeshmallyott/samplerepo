@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		      Scanner sc = new Scanner(System.in);
+		      int count = 0;
+		      long temp=0;
+		      long temp1=0;
+		      long num = sc.nextLong();
+		      temp=  num;
+		      temp1=num;
+		      if (num<1) {
+		    	  System.out.println(num +" falls behind the limit");
+		    	  System.exit(0);
+		      }else if (num>999999999) {
+		    	  System.out.println(num +" exceeds the limit");
+		    	  System.exit(0);
+		      }
+		      int digit = sc.nextInt();
+		      if (digit >9) {
+		    	  System.out.println(digit +" is not valid");
+		    	  System.exit(0);
+		      }
+		      while(temp1!=0){
+		    	  
+		         temp = temp1%10;
+		         temp1=temp1/10;
+		         if (temp==digit) {
+		         count++;	
+		         }
+		         
+		      }
+		      if (count==0)
+		      {
+		    	  System.out.println(digit + " is not available in " + num);
+		    	  System.exit(0);
+		      }
+		      System.out.println("Count of "+digit + " in " + num +" is " +count);
+		
+		
+	}
+
+}
