@@ -2,6 +2,7 @@
 //updated by me
 //move from local to github
 //push from github to local
+//from eclipse to github
 
 import java.util.Scanner;
 
