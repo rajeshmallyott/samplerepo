@@ -3,6 +3,7 @@
 //move from local to github
 //push from github to local
 //from eclipse to github
+//fetch from upstream
 
 import java.util.Scanner;
 
